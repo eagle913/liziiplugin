@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "cn.lizii.shake"
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+         //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
+        //git remote set-url origin https://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@github.com/eagle913/liziiplugin.git
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+}
