@@ -41,16 +41,16 @@ dependencies {
     implementation(name: 'LCOpenSDK', ext: 'aar')
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.github.eagle913'
-                artifactId = 'liziiplugin'
-                version = '1.0'
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            // Creates a Maven publication called "release".
+//            release(MavenPublication) {
+//                from components.release
+//                groupId = 'com.github.eagle913'
+//                artifactId = 'liziiplugin'
+//                version = '1.0'
+//            }
+//        }
+//    }
+//}
