@@ -32,7 +32,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.aar'])
+//    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation(name: 'LCOpenSDK', ext: 'aar')
 }
 
 afterEvaluate {
