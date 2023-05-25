@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
+
+group = 'com.github.eagle913'
+version = '1.0.1'
 
 android {
     compileSdkVersion 33
@@ -29,4 +33,18 @@ android {
 
 dependencies {
 
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.eagle913'
+                artifactId = 'liziiplugin'
+                version = '1.0'
+            }
+        }
+    }
 }

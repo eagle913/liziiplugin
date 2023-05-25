@@ -12,4 +12,9 @@ public class LZShake {
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(timeMs);
     }
+
+    public void shake(Context context,long [] times,int repeat){
+        Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(times,repeat);
+    }
 }
