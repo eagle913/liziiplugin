@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'com.kezong.fat-aar'
 //    id 'maven-publish'
 }
 
@@ -38,7 +39,7 @@ repositories {
 }
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.aar'])
-    implementation(name: 'LCOpenSDK', ext: 'aar')
+    embed (name: 'LCOpenSDK', ext: 'aar')
 }
 
 //afterEvaluate {
